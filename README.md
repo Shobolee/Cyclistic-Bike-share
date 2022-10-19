@@ -336,12 +336,9 @@ all_trips_v2 %>%
 ```
 The document, plots and tables are then exported for further analysis. Further visualisations also performed on Power BI. Saving the dataframes as CSV files on my local desktop.
 
-```{r}
-counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
-write.csv(counts, file ="C:\\Users\\This PC\\Documents\\Capstone_Project") 
 
 ```
 ```{r}
-write.csv(all_trips_v2,"C:\\Users\\This PC\\Documents\\Capstone_Project, row.names=FALSE)
+write.csv(all_trips_v2,file = cleaned_all_trips_v2, row.names=FALSE)
 ```
 
