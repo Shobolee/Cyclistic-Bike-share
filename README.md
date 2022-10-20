@@ -334,7 +334,7 @@ all_trips_v2 %>%
   summarise(Average_ride_length = mean(ride_length)) %>%
   ggplot(aes(x=rideable_type, y=Average_ride_length, fill=member_casual)) + geom_col(position = "dodge") + labs(title="Average ride length per rideable type" , x="Rideable Type", y="Average ride length")
 ```
-The document, plots and tables are then exported for further analysis. Further visualisations also performed on Power BI. Saving the dataframes as CSV files on my local desktop.
+The document,plots and tables are then exported for further analysis. Further visualisations also performed on Power BI. Saving the dataframes as CSV files on my local desktop.
 
 
 ```
